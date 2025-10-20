@@ -9,11 +9,11 @@ export type Reminder = {
 
 export type InsertReminder = {
     reminder: string;
-    notes?: string | null;
+    note?: string | null;
     userId: number;
 };
 
 export type UpdateReminder = {
     reminder?: string;
-    notes?: string | null;
+    note?: string | null;
 };

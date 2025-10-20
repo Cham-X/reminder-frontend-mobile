@@ -25,7 +25,7 @@ export default function ReminderListItem({ reminderItem }:ReminderListItemProps)
 
   return (
       <TouchableOpacity
-            onPress={() => completedReminder(isCompleted)}
+      onPress={() => completedReminder(isCompleted)}
       style={{
         flexDirection: 'row',
         alignItems: 'center',

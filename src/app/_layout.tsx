@@ -9,12 +9,13 @@ const RooLayout = () => {
     return (
      <QueryClientProvider client={queryClient}>
       <Stack>
-        <Stack.Screen name="index" options={{ headerShown: false }} />
+                <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen
           name="createUpdateReminder"
           options={{
             presentation: 'modal',
             headerTitle: 'New Reminder',
+             headerTitleAlign: 'center',
             headerLeft: () => <Text style={{ color: '#0E7AFE' }} onPress={() => router.back()}>Cancel</Text>
           }}
         />
